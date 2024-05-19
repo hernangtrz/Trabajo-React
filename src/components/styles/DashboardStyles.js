@@ -9,6 +9,19 @@ export const DashboardContainer = styled.div`
   height: 100vh;
 `;
 
+export const Title = styled.h1`
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+`;
+
+export const Subtitle = styled.h2`
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+`;
+
 export const BackgroundImage = styled.div`
   position: absolute;
   top: 0;

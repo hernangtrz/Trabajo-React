@@ -7,7 +7,6 @@ import {
 } from "react-router-dom";
 import Login from "./components/Login";
 import Dashboard from "./components/Dashboard";
-import Home from "./components/Home";
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -35,7 +34,6 @@ function App() {
           path="/dashboard/*"
           element={isAuthenticated ? <Dashboard /> : <Navigate to="/login" />}
         />
-        <Route path="/Home" element={<Home />} />
         <Route path="*" element={<Navigate to="/login" />} />
       </Routes>
     </Router>

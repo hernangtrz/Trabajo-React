@@ -1,5 +1,10 @@
 import React from "react";
-import { DashboardContainer, BackgroundImage } from "./styles/DashboardStyles";
+import {
+  DashboardContainer,
+  BackgroundImage,
+  Title,
+  Subtitle,
+} from "./styles/DashboardStyles";
 import Navbar from "./Navbar";
 
 const Dashboard = () => {
@@ -8,8 +13,12 @@ const Dashboard = () => {
       <BackgroundImage />
       <Navbar />
       <div>
-        <h2>Bienvenido a CONCERNET</h2>
-        <p>Gestión de espacios y administración de un conjunto cerrado</p>
+        <Title>
+          <h2>Bienvenido a CONCERNET</h2>
+        </Title>
+        <Subtitle>
+          <p>Gestión de espacios y administración de un conjunto cerrado</p>
+        </Subtitle>
       </div>
     </DashboardContainer>
   );
