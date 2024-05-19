@@ -11,6 +11,7 @@ export const LoginContainer = styled.div`
 export const LoginForm = styled.form`
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: white;
   padding: 20px;
   border-radius: 5px;
@@ -34,4 +35,10 @@ export const Button = styled.button`
   &:hover {
     background-color: #0056b3;
   }
+`;
+
+export const ErrorMessage = styled.p`
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
 `;
