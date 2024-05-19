@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import backgroundImage from "../assets/background.jpg"; // Importar la imagen de fondo
+import backgroundImage from "../../assets/background.jpg"; // Importar la imagen de fondo
 
 export const DashboardContainer = styled.div`
   position: relative;
