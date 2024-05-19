@@ -31,6 +31,5 @@ export const BackgroundImage = styled.div`
   height: 100%;
   background-image: url(${background});
   background-size: cover;
-  opacity: 0.5; /* Ajusta la opacidad según sea necesario */
   z-index: -1;
 `;

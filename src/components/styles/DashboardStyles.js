@@ -17,8 +17,5 @@ export const BackgroundImage = styled.div`
   height: 100%;
   background-image: url(${backgroundImage});
   background-size: cover;
-  filter: brightness(
-    0.5
-  ); /* Oscurece un poco la imagen para resaltar el contenido */
   z-index: -1;
 `;
