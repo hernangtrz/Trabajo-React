@@ -7,6 +7,10 @@ import {
 } from "react-router-dom";
 import Login from "./components/Login";
 import Dashboard from "./components/Dashboard";
+import CasasDisponibles from "./components/CasasDisponibles";
+import EspaciosComunes from "./components/EspaciosComunes";
+import PagoAdministracion from "./components/PagoAdministracion";
+import RecibosPago from "./components/RecibosPago";
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -34,6 +38,19 @@ function App() {
           path="/dashboard/*"
           element={isAuthenticated ? <Dashboard /> : <Navigate to="/login" />}
         />
+        <Route
+          path="/dashboard/CasasDisponibles"
+          element={<CasasDisponibles />}
+        />
+        <Route
+          path="/dashboard/EspaciosComunes"
+          element={<EspaciosComunes />}
+        />
+        <Route
+          path="/dashboard/PagoAdministracion"
+          element={<PagoAdministracion />}
+        />
+        <Route path="/dashboard/RecibosPago" element={<RecibosPago />} />
         <Route path="*" element={<Navigate to="/login" />} />
       </Routes>
     </Router>

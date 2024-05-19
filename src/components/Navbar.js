@@ -5,16 +5,16 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <Nav>
-      <NavLink as={Link} to="/dashboard/casas-disponbles">
+      <NavLink as={Link} to="/dashboard/CasasDisponibles">
         Casas disponibles
       </NavLink>
-      <NavLink as={Link} to="/dashboard/espacios-comunes">
+      <NavLink as={Link} to="/dashboard/EspaciosComunes">
         Espacios comunes
       </NavLink>
-      <NavLink as={Link} to="/dashboard/pago-administracion">
+      <NavLink as={Link} to="/dashboard/PagoAdministracion">
         Pago administración
       </NavLink>
-      <NavLink as={Link} to="/dashboard/recibos-pago">
+      <NavLink as={Link} to="/dashboard/RecibosPago">
         Recibos de pago
       </NavLink>
     </Nav>
